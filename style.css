@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+img {
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.hero__container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./gallery/BD-landing-baner.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    opacity: ;
+}
+
+.hero__navbar {
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__logo {
+    width: 150px;
+    height: 130px;
+}
+
+.hero__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero__button {
+    margin-top: 2.5rem;
+    padding-top: 5px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    background-color: #E50914;
+    border-radius: 5px;
+}
+
+.hero__button a {
+    color: #FFFF;
+}
+
+.hero--text--content {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    width: 660px;
+    height: auto;
+    text-align: center;
+}
+
+.hero__title {
+    margin-left: 5rem;
+    width: 500px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFFF;
+    text-align: center;
+}
+
+.hero--first--para {
+    padding: 1rem 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+}
+
+.hero--second--para {
+    font-size: 19px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.input__field {
+
+    margin-top: 1.5rem;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.hero__input {
+    padding: 0 10px;
+    position: relative;
+    width: 450px;
+    height: 55px;
+    font-size: 16px;
+}
+
+.hero__input input {
+    position: relative;
+    padding: 0 10px;
+    width: 450px;
+    height: 60px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 1.0em;
+    letter-spacing: 0.05em;
+}
+
+.hero__input span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1em;
+    color: grey;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 111;
+}
+
+.hero__input input:valid~span,
+.hero__input input:focus~span {
+    color: grey;
+    transform: translateX(0px) translateY(-14px);
+    font-size: 0.75em;
+}
+
+.get--stsrt--btn {
+    margin-left: 10px;
+    width: 205px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E30813;
+}
+
+.get--stsrt--btn a {
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.get--stsrt--btn i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.get--stsrt--btn:hover {
+    background-color: #f70a16;
+    transition: 0.5s;
+}
+
+/* TV SECTION  */
+.tv__container {
+    padding: 0 7rem;
+    width: 100%;
+    height: 465px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.tv--text--side {
+    width: 500px;
+}
+
+.tv--text--header {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.tv--text--para {
+    margin-top: 1.5rem;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.tv__vdo {
+    position: relative;
+    width: 600px;
+    height: 450px;
+}
+
+.tv__vdo video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tv__vdo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(./gallery/tv.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* DOWNLOAD SECTION  */
+.download {
+    padding: 0 5rem;
+    width: 100%;
+    height: 465px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+}
+
+.download__picture {
+    position: relative;
+}
+
+.after__box {
+    padding: 10px 5px;
+    position: absolute;
+    width: 300px;
+    top: 280px;
+    left: 150px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+.after__image {
+    width: 80px;
+    height: 80px;
+}
+
+.after__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.after__text {
+    margin-left: 1rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.after__header {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.after__dow {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0071eb;
+    margin-top: 5px;
+}
+
+.download__icon i {
+    margin-right: 2rem;
+    color: #FFF;
+}
+
+.download__image {
+    width: 600px;
+    height: 400px;
+}
+
+.download__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.download__text {
+    margin-top: 4rem;
+    width: 550px;
+}
+
+.download__head {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.download__para {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+/* WATCH  SECTION  */
+.watch__container {
+    background: #000;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.watch__contain {
+    position: absolute;
+    width: 500px;
+    top: 100px;
+    left: 100px;
+}
+
+.watch__head {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.watch__para {
+    margin-top: 1rem;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+}
+/* PROFILE  SECTION   */
+.profile__container {
+    padding: 0 7rem;
+    width: 100%;
+    height: 540px;
+    background: #000;
+    display: flex;
+    align-items: center;
+}
+.profile__image {
+    width: 500px;
+    height: 500px;
+}
+.profile__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.profile__text {
+    width: 600px;
+}
+.profile--text--head {
+    font-size: 50px;
+    font-weight: 700;
+    color: #FFF;
+}
+.profile--text--para {
+    margin-top: 1rem;
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+}
