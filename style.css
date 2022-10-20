@@ -87,7 +87,7 @@ ul li {
 }
 
 .hero--first--para {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     font-size: 26px;
     font-weight: 400;
     color: #FFF;
@@ -345,6 +345,7 @@ ul li {
     font-weight: 400;
     color: #FFF;
 }
+
 /* PROFILE  SECTION   */
 .profile__container {
     padding: 0 7rem;
@@ -354,26 +355,136 @@ ul li {
     display: flex;
     align-items: center;
 }
+
 .profile__image {
     width: 500px;
     height: 500px;
 }
+
 .profile__image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 .profile__text {
     width: 600px;
 }
+
 .profile--text--head {
     font-size: 50px;
     font-weight: 700;
     color: #FFF;
 }
+
 .profile--text--para {
     margin-top: 1rem;
     font-size: 26px;
     font-weight: 400;
     color: #FFF;
+}
+
+/* .DASH SECTION  */
+.dash__container {
+    background: #222222;
+    width: 100%;
+    height: 10px;
+}
+
+/* QUESTION BOX  */
+.question__container {
+    width: 100%;
+    background: #000;
+}
+
+.question__head {
+    padding: 2rem 0;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.question__content {
+   padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question--content--box {
+    margin: 10px 0;
+    padding: 1rem 1.2rem;
+    width: 812px;
+    height: 73px;
+    background: #303030;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box--title--text {
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 400;
+    
+}
+.box--title--icon {
+    font-size: 26px;
+    font-weight: 400;
+    color: #FFF;
+}
+.text--input--field {
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* FOOTER SECTION  */
+.footer__container {
+    width: 100%;
+    height: 320px;
+   background: #000;
+   position: relative;
+}
+.contact {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 70px;
+    left: 205px;
+}
+.footer__contant {
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 100px;
+    left: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer--content--box:nth-child(4) {
+    padding-bottom: 3rem;
+    
+}
+.contact__item {
+    padding: 5px 0;
+}
+.contact__item a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #737373;
+}
+.bottam__text {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 30px;
+    left: 205px;
 }
